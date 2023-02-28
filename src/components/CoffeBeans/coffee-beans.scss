@@ -1,0 +1,22 @@
+.coffee-bean-divider {
+  display: block;
+  margin: 20px auto 0;
+  position: relative;
+
+  &:before, &:after {
+    content: 'before after';
+    position: absolute;
+    height: 1px;
+    width: 60px;
+    border: 1px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &:before {
+    left: 25px;
+  }
+
+  &:before {
+    right: 25px;
+  }
+}
