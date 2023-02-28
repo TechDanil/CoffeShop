@@ -1,0 +1,13 @@
+.main {
+  background: url('../resources/img/bg/first-main-bg.jpg') center center / cover no-repeat;
+  min-height: 100vh;
+  &-header {
+    width: 355px;
+  }
+}
+
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
