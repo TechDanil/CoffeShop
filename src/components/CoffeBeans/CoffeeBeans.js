@@ -2,7 +2,8 @@ import './coffee-beans.scss';
 
 function CoffeeBeans({color}) {
     return (
-        <svg className="coffee-bean-divider" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className="coffee-bean-divider">
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_4_68)">
                     <path d="M9.38842 26.5504C8.03446 24.1621 8.95551 20.4168 11.7569 17.6151C14.9384
                     14.4341 19.3369 13.6759 21.5827 15.9214C21.585 15.9242 21.5878 15.9274
@@ -25,13 +26,14 @@ function CoffeeBeans({color}) {
                     4.42863C29.6811 5.85357 29.0348 7.50469 27.7271 9.26029C25.0722 12.8223 25.446
                     15.4731 25.8269 16.623C25.8486 16.6275 25.869 16.6331 25.8891 16.6375C29.0065 17.2444
                      32.2299 14.157 33.0896 9.74126C33.8552 5.81187 32.4892 2.15716 29.9836 0.971332Z" fill={color}/>
-            </g>
-            <defs>
-                <clipPath id="clip0_4_68">
-                    <rect width="29.302" height="29.302" fill={color} transform="translate(4)"/>
-                </clipPath>
-            </defs>
-        </svg>
+                </g>
+                <defs>
+                    <clipPath id="clip0_4_68">
+                        <rect width="29.302" height="29.302" fill={color} transform="translate(4)"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
     );
 }
 
