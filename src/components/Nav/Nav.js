@@ -3,7 +3,7 @@ import './nav.scss';
 function Nav({color}) {
     return (
         <nav className="nav">
-            <a href="#" className="nav__logo">
+            <a href="#" className="logo">
                 <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clipPath="url(#clip0_4_46)">
                             <path d="M4.05415 26.9849C4.60045 31.5459 10.0971 34.985 16.8399 34.985C22.9019

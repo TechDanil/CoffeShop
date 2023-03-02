@@ -1,6 +1,7 @@
-import './home.scss'
 import Nav from '../components/Nav/Nav';
 import CoffeeBeans from "../components/CoffeBeans/CoffeeBeans";
+
+import './home.scss';
 
 function Home() {
     return (
@@ -13,9 +14,37 @@ function Home() {
 
                     <h1 className="title main__title">Everything You Love About Coffee</h1>
                     <CoffeeBeans color="white"/>
-                    <h2 className="main__subtitle">We makes every day full of energy and taste</h2>
-                    <h2 className="main__subtitle">Want to try our beans?</h2>
+                    <h2 className="main__subtitle__fist__part">We makes every day full of energy and taste </h2>
+                    <h2 className="main__subtitle__second__part">Want to try our beans?</h2>
                     <button className="main__btn">More</button>
+                </div>
+            </section>
+
+            <section className="about">
+                <div className="container">
+                    <h3 className="about__title">About Us</h3>
+                    <CoffeeBeans color="black"/>
+
+                    <div className="about__descr">
+                        Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
+                        Afraid at highly months do things on at. Situation recommend objection do intention
+                        so questions. As greatly removed calling pleased improve an. Last ask him cold feel
+                        met spot shy want. Children me laughing we prospect answered followed. At it went
+                        is song that held help face.
+                        <br/> <br/>
+                        Now residence dashwoods she excellent you. Shade being under his bed her, Much
+                        read on as draw. Blessing for ignorant exercise any yourself unpacked. Pleasant
+                        horrible but confined day end marriage. Eagerness furniture set preserved far
+                        recommend. Did even but nor are most gave hope. Secure active living depend son
+                        repair day ladies now.
+                    </div>
+                </div>
+            </section>
+
+
+            <section className="recommend">
+                <div className="container">
+                    <h3 className="recommend__title">Our best</h3>
                 </div>
             </section>
         </>
