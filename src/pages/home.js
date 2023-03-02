@@ -1,9 +1,10 @@
-import Nav from '../components/Nav/Nav';
-import CoffeeBeans from "../components/CoffeBeans/CoffeeBeans";
+import Nav from '../components/nav/nav';
+import CoffeeBeans from "../components/coffe-beans/coffee-beans";
+import CardList from "../components/card-list/card-list";
 
 import './home.scss';
 
-function Home() {
+function Home({data}) {
     return (
         <>
             <section className="main">
@@ -45,6 +46,7 @@ function Home() {
             <section className="recommend">
                 <div className="container">
                     <h3 className="recommend__title">Our best</h3>
+                    <CardList data={data}/>
                 </div>
             </section>
         </>
