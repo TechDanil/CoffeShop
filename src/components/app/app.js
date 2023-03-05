@@ -38,7 +38,6 @@ function App() {
             country: 'Kenya',
             isRecommended: true,
         },
-
     ];
 
 

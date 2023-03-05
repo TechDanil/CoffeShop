@@ -22,10 +22,13 @@
     margin-top: 128px;
   }
 
+  &__subtitle__fist__part {
+    margin-top: 34px;
+  }
+
   &__subtitle__fist__part, &__subtitle__second__part {
     font-weight: 700;
     font-size: 24px;
-    line-height: 35px;
     color: #fff;
     text-align: center;
   }
@@ -45,7 +48,7 @@
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
     background-color: transparent;
     border-radius: 3px;
-    margin: 18px auto 0;
+    margin: 23px auto 0;
     cursor: pointer;
   }
 }
@@ -80,6 +83,38 @@
     font-size: 24px;
     line-height: 35px;
     text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+    .main {
+      &__title {
+        font-size: 30px;
+      }
+    }
+}
+
+@media (max-width: 768px) {
+  .main {
+    &__title {
+      margin-top: 80px;
+    }
+
+    &__subtitle__fist__part, &__subtitle__second__part {
+      font-size: 23px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    &__title {
+      font-size: 25px;
+    }
+
+    &__subtitle__fist__part, &__subtitle__second__part {
+      font-size: 19px;
+    }
   }
 }
 

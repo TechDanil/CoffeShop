@@ -18,3 +18,21 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .nav {
+      justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav {
+    &-list {
+      &__item {
+        &-link {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

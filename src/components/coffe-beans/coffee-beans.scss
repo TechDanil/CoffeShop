@@ -1,5 +1,5 @@
 .coffee-bean-divider {
-  margin: 20px auto 0;
+  margin: auto 0;
   position: relative;
   text-align: center;
 
@@ -20,5 +20,29 @@
   &:after {
     bottom: 50%;
     left: 53%;
+  }
+}
+
+@media (max-width: 992px) {
+  .coffee-bean-divider {
+    &:before {
+      right: 54%;
+    }
+
+    &:after {
+      left: 54%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .coffee-bean-divider {
+    &:before {
+      right: 56%;
+    }
+
+    &:after {
+      left: 56%;
+    }
   }
 }
