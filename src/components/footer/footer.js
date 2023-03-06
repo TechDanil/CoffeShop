@@ -5,7 +5,7 @@ import './footer.scss';
 
 function Footer() {
     return (
-        <footer className="coffee__footer">
+        <footer className="home__footer">
             <div className="container">
                 <Nav color="black"/>
                 <CoffeeBeans color="black"/>

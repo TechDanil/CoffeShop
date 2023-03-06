@@ -1,0 +1,21 @@
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .filter-panel__text {
+    display: block;
+    margin-right: 35px;
+  }
+
+  .btn {
+    width: 75px;
+    height: 30px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 4px 0 0 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+  }
+}

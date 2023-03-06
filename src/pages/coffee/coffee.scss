@@ -1,0 +1,76 @@
+.coffee__main {
+  padding: 30px 0 84px;
+  background: url("../../resources/img/bg/second-main-bg.jpg") center center / cover no-repeat;
+  min-height: 260px;
+
+  .main-title {
+    margin-top: 60px;
+  }
+}
+
+.coffee__about {
+  padding-top: 70px;
+
+  &-wrapper {
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: column;
+    grid-template-columns: 272px 385px;
+    column-gap: 79px;
+
+    .coffee-bean-divider {
+      margin-top: 21px;
+
+      &:before {
+        right: 56%;
+      }
+
+      &:after {
+        left: 56%;
+      }
+    }
+  }
+
+  &-descr {
+    text-align: center;
+  }
+
+  &-text {
+    margin-top: 26px;
+    width: 389px;
+  }
+
+  &-photo {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .divider {
+    margin: 57px auto 0;
+    width: 240px;
+    border: 1px solid #000000;
+  }
+}
+
+.coffee__card--workaround {
+  padding-top: 60px;
+
+  &__functionality {
+    display: flex;
+    width: 747px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .home-card {
+     background-color: #fff;
+     &__list {
+       margin-top: 61px;
+       filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
+     }
+  }
+}

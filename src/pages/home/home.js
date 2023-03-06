@@ -1,32 +1,34 @@
-import Nav from '../components/nav/nav';
-import CoffeeBeans from "../components/coffe-beans/coffee-beans";
-import CardList from "../components/card-list/card-list";
-import Footer from  '../components/footer/footer';
+import Nav from '../../components/nav/nav';
+import CoffeeBeans from "../../components/coffe-beans/coffee-beans";
+import CardList from "../../components/card-list/card-list";
+import Footer from '../../components/footer/footer';
+
+import '../../components/title/_title.scss';
 import './home.scss';
 
 function Home({data}) {
     return (
         <>
-            <section className="main">
+            <section className="home__main">
                 <div className="container">
-                    <header className="main__header">
+                    <header className="home__main-header">
                         <Nav color='white'/>
                     </header>
 
-                    <h1 className="title main__title">Everything You Love About Coffee</h1>
+                    <h1 className="title home__main-title">Everything You Love About Coffee</h1>
                     <CoffeeBeans color="white"/>
-                    <h2 className="main__subtitle__fist__part">We makes every day full of energy and taste </h2>
-                    <h2 className="main__subtitle__second__part">Want to try our beans?</h2>
-                    <button className="main__btn">More</button>
+                    <h2 className="home__main-subtitle__fist__part">We makes every day full of energy and taste </h2>
+                    <h2 className="home__main-subtitle__second__part">Want to try our beans?</h2>
+                    <button className="home__main-btn">More</button>
                 </div>
             </section>
 
-            <section className="about">
+            <section className="home__about">
                 <div className="container">
-                    <h3 className="about__title">About Us</h3>
+                    <h3 className="home__about-title">About Us</h3>
                     <CoffeeBeans color="black"/>
 
-                    <div className="about__descr">
+                    <div className="home__about-descr">
                         Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
                         Afraid at highly months do things on at. Situation recommend objection do intention
                         so questions. As greatly removed calling pleased improve an. Last ask him cold feel
@@ -43,9 +45,9 @@ function Home({data}) {
             </section>
 
 
-            <section className="recommend">
+            <section className="home__recommend">
                 <div className="container">
-                    <h3 className="recommend__title">Our best</h3>
+                    <h3 className="home__recommend-title">Our best</h3>
                     <CardList data={data}/>
                 </div>
             </section>

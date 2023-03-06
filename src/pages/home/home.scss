@@ -1,13 +1,5 @@
-.title {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 58px;
-  color: #fff;
-  text-align: center;
-}
-
-.main {
-  background: url('../resources/img/bg/first-main-bg.jpg') center center / cover no-repeat;
+.home__main {
+  background: url('../../resources/img/bg/first-main-bg.jpg') center center / cover no-repeat;
   min-height: 100vh;
   padding: 30px 0 201px;
 
@@ -17,27 +9,27 @@
     }
   }
 
-  &__title {
+  &-title {
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     margin-top: 128px;
   }
 
-  &__subtitle__fist__part {
+  &-subtitle__fist__part {
     margin-top: 34px;
   }
 
-  &__subtitle__fist__part, &__subtitle__second__part {
+  &-subtitle__fist__part, &-subtitle__second__part {
     font-weight: 700;
     font-size: 24px;
     color: #fff;
     text-align: center;
   }
 
-  &__subtitle__second__part {
+  &-subtitle__second__part {
     margin-top: 20px;
   }
 
-  &__btn {
+  &-btn {
     display: block;
     width: 120px;
     height: 30px;
@@ -53,17 +45,17 @@
   }
 }
 
-.about {
+.home__about {
   padding: 83px 0 101px;
 
-  &__title {
+  &-title {
     font-weight: 400;
     font-size: 24px;
     line-height: 35px;
     text-align: center;
   }
 
-  &__descr {
+  &-descr {
     max-width: 591px;
     font-weight: 700;
     font-size: 14px;
@@ -73,12 +65,12 @@
   }
 }
 
-.recommend {
+.home__recommend {
   padding: 80px 0 110px;
   min-height: 495px;
-  background: url("../resources/img/bg/paper-bg.jpg") center center / cover no-repeat;
+  background: url("../../resources/img/bg/paper-bg.jpg") center center / cover no-repeat;
 
-  &__title {
+  &-title {
     font-weight: 400;
     font-size: 24px;
     line-height: 35px;
@@ -87,32 +79,32 @@
 }
 
 @media (max-width: 992px) {
-    .main {
-      &__title {
+    .home__main {
+      &-title {
         font-size: 30px;
       }
     }
 }
 
 @media (max-width: 768px) {
-  .main {
-    &__title {
+  .home__main {
+    &-title {
       margin-top: 80px;
     }
 
-    &__subtitle__fist__part, &__subtitle__second__part {
+    &-subtitle__fist__part, &-subtitle__second__part {
       font-size: 23px;
     }
   }
 }
 
 @media (max-width: 576px) {
-  .main {
-    &__title {
+  .home__main {
+    &-title {
       font-size: 25px;
     }
 
-    &__subtitle__fist__part, &__subtitle__second__part {
+    &-subtitle__fist__part, &-subtitle__second__part {
       font-size: 19px;
     }
   }

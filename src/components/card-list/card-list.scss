@@ -1,4 +1,4 @@
-.coffee-card__list {
+.home-card__list {
   display: grid;
   grid-template-columns: repeat(3, minmax(220px, auto));
   max-width: 802px;
@@ -8,14 +8,14 @@
 }
 
 @media (max-width: 768px) {
-  .coffee-card__list {
+  .home-card__list {
     grid-template-columns: repeat(2, minmax(220px, auto));
     justify-content: space-around;
   }
 }
 
 @media (max-width: 576px) {
-  .coffee-card__list {
+  .home-card__list {
     grid-template-columns: repeat(1, minmax(220px, auto));
   }
 }
