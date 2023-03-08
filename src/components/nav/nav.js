@@ -1,6 +1,33 @@
 import './nav.scss';
 
 function Nav({color}) {
+    const linksData = [
+        {
+            id: 0,
+            textContent: 'Coffee house',
+        },
+
+        {
+            id: 1,
+            textContent: 'Our coffee',
+        },
+
+        {
+            id: 2,
+            textContent: 'For your pleasure',
+        },
+    ];
+
+    const links = linksData.map(link => {
+        const {textContent, id} = link;
+
+        return (
+            <li key={id} className="nav-list__item">
+                <a href="#" className="nav-list__item-link">{textContent}</a>
+            </li>
+        );
+    });
+
     return (
         <nav className="nav">
             <a href="#" className="logo">
@@ -63,18 +90,9 @@ function Nav({color}) {
                     </defs>
                 </svg>
             </a>
+
             <ul className="nav-list">
-                <li className="nav-list__item">
-                    <a href="#" className="nav-list__item-link">Coffee house</a>
-                </li>
-
-                <li className="nav-list__item">
-                    <a href="#" className="nav-list__item-link">Our coffee</a>
-                </li>
-
-                <li className="nav-list__item">
-                    <a href="#" className="nav-list__item-link">For your pleasure</a>
-                </li>
+                {links}
             </ul>
         </nav>
 

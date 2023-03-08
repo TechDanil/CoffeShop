@@ -10,23 +10,28 @@
 
 .coffee__about {
   padding-top: 70px;
-
+  .about-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+  }
   &-wrapper {
     display: grid;
     justify-content: center;
     grid-auto-flow: column;
-    grid-template-columns: 272px 385px;
+    grid-template-columns: 272px 346px;
     column-gap: 79px;
 
     .coffee-bean-divider {
       margin-top: 21px;
 
       &:before {
-        right: 56%;
+        right: 60%;
       }
 
       &:after {
-        left: 56%;
+        left: 60%;
       }
     }
   }
@@ -37,7 +42,10 @@
 
   &-text {
     margin-top: 26px;
-    width: 389px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
   }
 
   &-photo {
@@ -64,6 +72,7 @@
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .home-card {
@@ -74,3 +83,53 @@
      }
   }
 }
+
+@media (max-width: 991px) {
+  .coffee__about {
+      grid-template-columns: 230px 385px;
+  }
+
+  .coffee__card--workaround {
+    &__functionality {
+      width: 700px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .coffee__card--workaround {
+    &__functionality {
+      flex-direction: column;
+      align-content: flex-start;
+      row-gap: 15px;
+      width: 515px;
+    }
+  }
+
+  .coffee__about {
+    &-wrapper {
+      grid-template-columns: 214px 223px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .coffee__card--workaround {
+    &__functionality {
+      align-content: center;
+      width: 325px;
+    }
+  }
+
+  .coffee__about {
+    .about-title {
+      margin-top: 20px;
+    }
+    &-wrapper {
+      grid-template: 355px auto / 1fr;
+    }
+  }
+}
+
+
+

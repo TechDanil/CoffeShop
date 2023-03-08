@@ -1,14 +1,15 @@
 import Nav from "../../components/nav/nav";
 import CoffeeBeans from "../../components/coffe-beans/coffee-beans";
 import SearchPanel from "../../components/search-panel/search-panel";
-
-import '../../components/title/_title.scss';
-import './coffee.scss';
-import Girl from '../../resources/img/coffee-page/girl.svg';
 import FilterPanel from "../../components/filter-panel/filter-panel";
 import CardList from "../../components/card-list/card-list";
+import Footer from "../../components/footer/footer";
 
-function Coffee({data, onUpdateSearch}) {
+import Girl from '../../resources/img/coffee-page/girl.svg';
+import '../../components/title/_title.scss';
+import './coffee.scss';
+
+function Coffee({data, onUpdateSearch, filter, onFilterSelect}) {
     return (
         <>
             <section className="coffee__main">
@@ -48,11 +49,13 @@ function Coffee({data, onUpdateSearch}) {
                 <div className="container">
                     <div className="coffee__card--workaround__functionality">
                         <SearchPanel onUpdateSearch={onUpdateSearch}/>
-                        <FilterPanel/>
+                        <FilterPanel filter={filter} onFilterSelect={onFilterSelect}/>
                     </div>
                     <CardList data={data}/>
             </div>
             </section>
+
+            <Footer/>
         </>
     );
 }

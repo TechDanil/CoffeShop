@@ -99,7 +99,26 @@ class App extends Component{
                 },
             ],
             term: '',
+            filter: 'all',
         };
+
+        this.filterData = {
+            'brazil': function (items) {
+                return items.filter(item => item.country === 'Brazil');
+            },
+
+            'kenya': function (items) {
+                return items.filter(item => item.country === 'Kenya');
+            },
+
+            'columbia': function (items) {
+                return items.filter(item => item.country === 'Columbia');
+            },
+
+            'all': function (items) {
+                return items;
+            }
+        }
     }
 
     searchItem = (items, term) => {
@@ -115,13 +134,26 @@ class App extends Component{
         });
     }
 
+    filterItems = (items, filter) => {
+        return this.filterData[filter](items);
+    }
+
+    onFilterSelect = (filter) => {
+        this.setState({
+           filter,
+        });
+    }
+
     render() {
-       const {articles, term} = this.state;
-       const visibleData = this.searchItem(articles, term);
+       const {articles, term, filter} = this.state;
+       const visibleData = this.filterItems(this.searchItem(articles, term), filter);
        return (
            <BrowserRouter>
                {/*<Home data={data}/>*/}
-               <Coffee data={visibleData} onUpdateSearch={this.onUpdateSearch}/>
+               <Coffee data={visibleData}
+                       onUpdateSearch={this.onUpdateSearch}
+                       filter={filter}
+                       onFilterSelect={this.onFilterSelect}/>
            </BrowserRouter>
        );
     }

@@ -1,21 +1,29 @@
-.btn-group {
+.filter-panel {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
-  .filter-panel__text {
+  &__text {
     display: block;
     margin-right: 35px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
   }
 
-  .btn {
-    width: 75px;
-    height: 30px;
-    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
-    border-radius: 4px 0 0 4px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 17px;
-    text-align: center;
+  .btn-group {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(73px, auto));
+    grid-auto-flow: row;
+    gap: 5px;
+
+    .btn {
+      width: 75px;
+      height: 30px;
+      box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+      border-radius: 4px 0 0 4px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 17px;
+      text-align: center;
+    }
   }
 }
