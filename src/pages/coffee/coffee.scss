@@ -1,69 +1,4 @@
-.coffee__main {
-  padding: 30px 0 84px;
-  background: url("../../resources/img/bg/second-main-bg.jpg") center center / cover no-repeat;
-  min-height: 260px;
-
-  .main-title {
-    margin-top: 60px;
-  }
-}
-
-.coffee__about {
-  padding-top: 70px;
-  .about-title {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 35px;
-    text-align: center;
-  }
-  &-wrapper {
-    display: grid;
-    justify-content: center;
-    grid-auto-flow: column;
-    grid-template-columns: 272px 346px;
-    column-gap: 79px;
-
-    .coffee-bean-divider {
-      margin-top: 21px;
-
-      &:before {
-        right: 60%;
-      }
-
-      &:after {
-        left: 60%;
-      }
-    }
-  }
-
-  &-descr {
-    text-align: center;
-  }
-
-  &-text {
-    margin-top: 26px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-  }
-
-  &-photo {
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .divider {
-    margin: 57px auto 0;
-    width: 240px;
-    border: 1px solid #000000;
-  }
-}
-
-.coffee__card--workaround {
+.coffee__card-workaround {
   padding-top: 60px;
 
   &__functionality {
@@ -85,11 +20,7 @@
 }
 
 @media (max-width: 991px) {
-  .coffee__about {
-      grid-template-columns: 230px 385px;
-  }
-
-  .coffee__card--workaround {
+  .coffee__card-workaround {
     &__functionality {
       width: 700px;
     }
@@ -97,7 +28,7 @@
 }
 
 @media (max-width: 767px) {
-  .coffee__card--workaround {
+  .coffee__card-workaround {
     &__functionality {
       flex-direction: column;
       align-content: flex-start;
@@ -105,28 +36,13 @@
       width: 515px;
     }
   }
-
-  .coffee__about {
-    &-wrapper {
-      grid-template-columns: 214px 223px;
-    }
-  }
 }
 
 @media (max-width: 575px) {
-  .coffee__card--workaround {
+  .coffee__card-workaround {
     &__functionality {
       align-content: center;
       width: 325px;
-    }
-  }
-
-  .coffee__about {
-    .about-title {
-      margin-top: 20px;
-    }
-    &-wrapper {
-      grid-template: 355px auto / 1fr;
     }
   }
 }

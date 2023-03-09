@@ -1,5 +1,5 @@
 import Nav from '../nav/nav';
-import CoffeeBeans from "../coffe-beans/coffee-beans";
+import CoffeeBeans from "../coffee-beans/coffee-beans";
 
 import './footer.scss';
 

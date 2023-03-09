@@ -3,17 +3,20 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 import Home from '../../pages/home/home';
 import Coffee from "../../pages/coffee/coffee";
+import Goods from "../../pages/goods/goods";
 
 import SolimoCoffee from '../../resources/img/goods/solimo-coffee-beans-2-kg.svg';
 import PrestoCoffee from '../../resources/img/goods/presto-coffee-beans-1-kg.svg';
 import AromisticoCoffee from '../../resources/img/goods/aromistico-coffee-1-kg.svg';
+import Girl from '../../resources/img/coffee-page/girl.svg';
+import CoffeeCup from '../../resources/img/goods/coffee-cup.svg';
 
 class App extends Component{
 
     constructor(props) {
         super(props);
 
-        const data = [
+        this.data = [
             {
                 id: 0,
                 src: SolimoCoffee,
@@ -39,6 +42,50 @@ class App extends Component{
                 alt: 'AROMISTICO Coffee 1 kg',
                 price: '6.99',
                 isRecommended: true,
+            },
+        ];
+
+        this.imgData = [
+            {
+                backgroundImgs: [
+                    {
+                        src: require('../../resources/img/bg/second-main-bg.jpg'),
+                    },
+
+                    {
+                        src: require('../../resources/img/bg/third-main-bg.jpg'),
+                    },
+                ],
+            }
+        ];
+
+        this.contentData = [
+            {
+                title: 'About our beans',
+                src: Girl,
+                alt: 'girl',
+                description: `Extremity sweetness difficult behaviour he of. On
+                disposal of as landlord horrible.\n
+                Afraid at highly months do things on at. Situation
+                recommend objection do intention \n so questions
+                As greatly removed calling pleased improve an.
+                Last ask him cold feel
+                met spot shy want. Children me laughing we prospect answered followed. At it went
+                is song that held help face.`,
+            },
+
+            {
+                title: 'About our goods',
+                src: CoffeeCup,
+                alt: 'coffee cup',
+                description: `Extremity sweetness difficult behaviour he of. On
+                disposal of as landlord horrible.\n
+                Afraid at highly months do things on at. Situation
+                recommend objection do intention \n so questions
+                As greatly removed calling pleased improve an.
+                Last ask him cold feel
+                met spot shy want. Children me laughing we prospect answered followed. At it went
+                is song that held help face.`,
             },
         ];
 
@@ -121,6 +168,7 @@ class App extends Component{
         }
     }
 
+
     searchItem = (items, term) => {
         if (!items.length)
             return items;
@@ -149,11 +197,14 @@ class App extends Component{
        const visibleData = this.filterItems(this.searchItem(articles, term), filter);
        return (
            <BrowserRouter>
-               {/*<Home data={data}/>*/}
+               {/*<Home data={this.data}/>*/}
                <Coffee data={visibleData}
                        onUpdateSearch={this.onUpdateSearch}
                        filter={filter}
-                       onFilterSelect={this.onFilterSelect}/>
+                       onFilterSelect={this.onFilterSelect}
+                       imgData={this.imgData}
+                       contentData={this.contentData}/>
+               {/*<Goods articles={articles} imgData={this.imgData} contentData={this.contentData}/>*/}
            </BrowserRouter>
        );
     }

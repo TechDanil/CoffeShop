@@ -14,7 +14,7 @@ function Nav({color}) {
 
         {
             id: 2,
-            textContent: 'For your pleasure',
+            textContent: 'For your goods',
         },
     ];
 

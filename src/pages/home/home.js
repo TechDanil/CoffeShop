@@ -1,5 +1,5 @@
 import Nav from '../../components/nav/nav';
-import CoffeeBeans from "../../components/coffe-beans/coffee-beans";
+import CoffeeBeans from "../../components/coffee-beans/coffee-beans";
 import CardList from "../../components/card-list/card-list";
 import Footer from '../../components/footer/footer';
 
